@@ -71,3 +71,12 @@ body {font-family: Calibri, sans-serif;}
     background: #1abc9c;
     color: white !important
 }
+
+table {
+    border-collapse: collapse;
+    background: white;
+    color: black;
+}
+th, td {
+    font-weight: bold;
+}
