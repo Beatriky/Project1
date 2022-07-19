@@ -22,7 +22,9 @@ body {font-family: Calibri, sans-serif;}
     letter-spacing: 3px;
 }
 
-
+h2{
+    font-size: 40px;
+}
 .month .prev {
     float: left;
     padding-top: 10px;
@@ -39,6 +41,7 @@ body {font-family: Calibri, sans-serif;}
     margin: 0;
     padding: 10px 0;
     background-color:#ddd;
+    font-size: 30px;
 }
 
 .weekdays li {
@@ -53,8 +56,12 @@ body {font-family: Calibri, sans-serif;}
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    font-size: 26px;
 }
 
+ td:hover{
+     background-color: #faa5f1;
+ }
 .days li {
     list-style-type: none;
     display: inline-block;
@@ -66,10 +73,10 @@ body {font-family: Calibri, sans-serif;}
 }
 
 /* Highlight the "current" day */
-.days li .active {
+.days .active {
     padding: 5px;
-    background: #1abc9c;
-    color: white !important
+    background: #e384e0;
+    color: pink
 }
 
 table {
@@ -79,4 +86,8 @@ table {
 }
 th, td {
     font-weight: bold;
+}
+
+tbody{
+    z-index: 1;
 }

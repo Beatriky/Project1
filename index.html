@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
-<title>Calendar</title>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>My Calendar</title>
+</head>
+
 
 <body>
 <script src="script.js"></script>
-<h2 align="center" style="color: orange;">
-    July 2022
+<h2 align="center" style="color: hotpink;">
+    Month 2022
 </h2>
 <br />
 
@@ -16,7 +22,7 @@
 
     </caption>
     <thead>
-    <tr>
+    <tr class="weekdays">
         <th>Sun</th>
         <th>Mon</th>
         <th>Tue</th>
@@ -29,62 +35,61 @@
 
     <tbody>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>1</td>
-        <td>2</td>
+
+    <tr class="days">
+        <td id="1" onclick="onClickDay(this.id)">1</td>
+        <td id="2" onclick="onClickDay(this.id)">2</td>
+        <td id="3" onclick="onClickDay(this.id)">3</td>
+        <td id="4" onclick="onClickDay(this.id)">4</td>
+        <td id="5" onclick="onClickDay(this.id)">5</td>
+        <td id="6" onclick="onClickDay(this.id)">6</td>
+        <td id="7" onclick="onClickDay(this.id)">7</td>
+
     </tr>
+
+
     <tr></tr>
-    <tr>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
+    <tr class="days">
+        <td id="8" onclick="onClickDay(this.id)">8</td>
+        <td id="9" onclick="onClickDay(this.id)">9</td>
+        <td id="10" onclick="onClickDay(this.id)">10</td>
+        <td id="11" onclick="onClickDay(this.id)">11</td>
+        <td id="12" onclick="onClickDay(this.id)">12</td>
+        <td id="13" onclick="onClickDay(this.id)">13</td>
+        <td id="14" onclick="onClickDay(this.id)">14</td>
     </tr>
-    <tr>
-        <td>10</td>
-        <td>11</td>
-        <td>12</td>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
+    <tr class="days">
+        <td id="15" onclick="onClickDay(this.id)">15</td>
+        <td id="16" onclick="onClickDay(this.id)">16</td>
+        <td id="17" onclick="onClickDay(this.id)">17</td>
+        <td id="18" onclick="onClickDay(this.id)">18</td>
+        <td id="19" onclick="onClickDay(this.id)">19</td>
+        <td id="20" onclick="onClickDay(this.id)">20</td>
+        <td id="21" onclick="onClickDay(this.id)">21</td>
     </tr>
-    <tr>
-        <td>17</td>
-        <td>18</td>
-        <td>19</td>
-        <td>20</td>
-        <td>21</td>
-        <td>22</td>
-        <td>23</td>
+    <tr class="days">
+        <td id="22" onclick="onClickDay(this.id)">22</td>
+        <td id="23" onclick="onClickDay(this.id)">23</td>
+        <td id="24" onclick="onClickDay(this.id)">24</td>
+        <td id="25" onclick="onClickDay(this.id)">25</td>
+        <td id="26" onclick="onClickDay(this.id)">26</td>
+        <td id="27" onclick="onClickDay(this.id)">27</td>
+        <td id="28" onclick="onClickDay(this.id)">28</td>
     </tr>
-    <tr>
-        <td>24</td>
-        <td>25</td>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
+    <tr class="days">
+        <td id="29" onclick="onClickDay(this.id)">29</td>
+        <td id="30" onclick="onClickDay(this.id)">30</td>
+        <td id="31" onclick="onClickDay(this.id)">31</td>
     </tr>
-    <tr>
-        <td>31</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-    </tr>
+
     </tbody>
 </table>
+
 </body>
+
+<script type="text/javascript">
+    function onClickDay(id) {
+        alert("Day:  " + id);}
+</script>
 
 </html>
