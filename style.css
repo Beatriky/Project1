@@ -92,11 +92,18 @@ th, td {
 tbody{
     z-index: 1;
 }
-
+textPara{
+   text-align: center;
+    font-size:25px;
+}
 .img {
     border-radius: 50%;
     width: 200px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 30%;
+}
+
+.available-green {
+    color: green;
 }

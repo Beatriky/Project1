@@ -1,0 +1,47 @@
+    <ul class="days">
+        <li class="days">
+            <span data-date="2022-07-01">1</span>
+        </li>
+        <li class="days">
+            <span data-date="2022-07-02">2</span>
+        </li>
+        <li class="days">
+            <span data-date="2022-07-03">3</span>
+        </li>
+        <li class="days">
+            <span data-date="2022-07-04">4</span>
+        </li>
+        <li class="days">
+            <span data-date="2022-07-05">5</span>
+        </li>
+        <li class="days">
+            <span data-date="2022-07-06">6</span>
+        </li>
+    </ul>
+
+
+document.getElementById(".days").addEventListener("click", function(){ alert("Hello World!"); });
+
+
+{
+        day.addEventListener(('click',event=>
+        {
+            console.log(event.target.dataset.date, event.target.innerText, "Weekend: "+event.currentTarget.classList.contains(('weekdays'),));
+        }))
+    })
+
+
+
+<script type="text/javascript">
+    function onClickDay(id) {
+        alert("Day:  " + id);
+    }
+
+    document.querySelectorAll('.day').forEach(item=>
+    {
+        item.addEventListener(('click',event=>
+        {
+            console.log(event.target.dataset.date, event.target.innerText, "Weekend: "+event.currentTarget.classList.contains(('weekdays'),));
+        }))
+    })
+</script>
