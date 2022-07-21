@@ -14,7 +14,7 @@
 <h2 align="center" style="color: hotpink;">
     Month 2022
 </h2>
-<br />
+<br/>
 
 <table bgcolor="lightgrey" align="center"
        cellspacing="21" cellpadding="21">
@@ -23,13 +23,13 @@
     </caption>
     <thead>
     <tr class="weekdays">
-        <th>Sun</th>
         <th>Mon</th>
         <th>Tue</th>
         <th>Wed</th>
         <th>Thu</th>
         <th>Fri</th>
         <th>Sat</th>
+        <th>Sun</th>
     </tr>
     </thead>
 
@@ -37,11 +37,13 @@
     <tr>
 
     <tr class="days">
+
         <td id="1" onclick="onClickDay(this.id)">1</td>
         <td id="2" onclick="onClickDay(this.id)">2</td>
         <td id="3" onclick="onClickDay(this.id)">3</td>
         <td id="4" onclick="onClickDay(this.id)">4</td>
         <td id="5" onclick="onClickDay(this.id)">5</td>
+
         <td id="6" onclick="onClickDay(this.id)">6</td>
         <td id="7" onclick="onClickDay(this.id)">7</td>
 
@@ -85,11 +87,44 @@
     </tbody>
 </table>
 
+<section>
+
+    <ul style="list-style-type:none;">
+        <li>
+            <picture>
+                <source media="(min-width:300px)" srcset="icon2.png">
+                <img class="img" src="icon2.png" alt="User" style="width:200px;">
+            </picture>
+            Adrian Andreas s-a programat in data de
+        </li>
+    </ul>
+    <ul>
+    <li>
+        <picture>
+            <source media="(min-width:100)" srcset="icon1.jpg">
+            <img class="img" src="icon1.jpg" alt="User2" style="width:180px;">
+        </picture>
+            Elena Basarab s-a programat la
+    </li>
+    </ul>
+    <ul>
+        <li>
+            <picture>
+                <source media="(min-width:100)" srcset="icon3.jpg">
+                <img class="img" src="icon3.jpg" alt="User3" style="width:180px;">
+            </picture>
+
+             Marcela Ioan s-a programat la
+        </li>
+    </ul>
+</section>
 </body>
 
 <script type="text/javascript">
     function onClickDay(id) {
-        alert("Day:  " + id);}
+        alert("Day:  " + id);
+    }
 </script>
 
 </html>
+

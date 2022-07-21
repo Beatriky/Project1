@@ -41,6 +41,7 @@ h2{
     margin: 0;
     padding: 10px 0;
     background-color:#ddd;
+    color: #666;
     font-size: 30px;
 }
 
@@ -90,4 +91,12 @@ th, td {
 
 tbody{
     z-index: 1;
+}
+
+.img {
+    border-radius: 50%;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
