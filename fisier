@@ -37,7 +37,7 @@ document.getElementById(".days").addEventListener("click", function(){ alert("He
         alert("Day:  " + id);
     }
 
-    document.querySelectorAll('.day').forEach(item=>
+    document.querySelectorAll('.days').forEach(item=>
     {
         item.addEventListener(('click',event=>
         {
